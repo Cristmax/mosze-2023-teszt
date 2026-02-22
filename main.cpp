@@ -4,34 +4,34 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-            //NELEMENTS helytelen név, helyesen N_ELEMENTS
+            //NELEMENTS helytelen nï¿½v, helyesen N_ELEMENTS
     int* b = new int[N_ELEMENTS];
 
-            //hiányzó pontosvesszõ
+            //hiï¿½nyzï¿½ pontosvesszï¿½
     std::cout << "1-100 ertekek duplazasa" << std::endl;
 
-            //hibás for ciklus fejléc
+            //hibï¿½s for ciklus fejlï¿½c
     for (int i = 0; i < N_ELEMENTS; i++)
     {
         b[i] = i * 2;
     }
 
-            //hibás ciklusfeltétel (i)
+            //hibï¿½s ciklusfeltï¿½tel (i)
     for (int i = 0; i < N_ELEMENTS; i++)
     {
-            // hiányzó kiírási rész és pontosvesszõ
+            // hiï¿½nyzï¿½ kiï¿½rï¿½si rï¿½sz ï¿½s pontosvesszï¿½
         std::cout << "Ertek: " << b[i] << std::endl;
     }
 
     std::cout << "Atlag szamitasa: " << std::endl;
 
-            //nincs inicializálva
+            //nincs inicializï¿½lva
     int atlag = 0;
 
-            //vesszõ a feltételben
+            //vesszï¿½ a feltï¿½telben
     for (int i = 0; i < N_ELEMENTS; i++)
     {
-            //hiányzó pontosvesszõ
+            //hiï¿½nyzï¿½ pontosvesszï¿½
         atlag += b[i];
     }
 
@@ -39,8 +39,10 @@ int main()
 
     std::cout << "Atlag: " << atlag << std::endl;
 
-         //hiányzó delete[]
+         //hiï¿½nyzï¿½ delete[]
     delete[] b;
 
-    return 0;
+        std::cout << "uj branch!" << std::endl;
+
+return 0;
 }
